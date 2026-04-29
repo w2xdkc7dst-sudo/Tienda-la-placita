@@ -1,6 +1,5 @@
 const { useState, useEffect, useMemo } = React;
-
-import { collection, addDoc, deleteDoc, doc, onSnapshot, updateDoc, query, orderBy } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+const { collection, addDoc, deleteDoc, doc, onSnapshot, updateDoc, query, orderBy } = window.firestoreLib;
 
 const db = window.__db;
 
